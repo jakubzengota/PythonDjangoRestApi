@@ -1,0 +1,27 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http=equiv="X-UA-Compatible" conten="ie=edge">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <title>Blog</title>
+
+
+    <link rel="stylesheet" href="{%  static  'css/style.css'  %}">
+
+</head>
+<body>
+    <div class="navbar">
+        <h1>Blog-Jakub Zengota</h1>
+        </div>
+        <div class="article">
+    {% for article in article_list %}
+        <h1>{{ article.name }}</h1>
+        <p>{{ article.description }}</p>
+    {% endfor %}
+    </div>
+</body>
+</html
