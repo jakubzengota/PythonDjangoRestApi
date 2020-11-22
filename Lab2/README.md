@@ -8,7 +8,7 @@ Logowanie dla uźytkowników
 Rejestracja
 ![](./mysite/images/register.png)
 Resetowanie hasła:
-![](./mysite/images/sresetpass.png)
+![](./mysite/images/resetpass.png)
 Widok userów dla admina
 ![](./mysite/images/111.png)
 Widok profilu zalogowane uzytkownika
