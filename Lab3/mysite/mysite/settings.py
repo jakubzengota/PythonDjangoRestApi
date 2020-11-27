@@ -38,7 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+
     
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
+
 ]
 
 MIDDLEWARE = [
@@ -138,3 +146,5 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'jakubzengota@gmail.com'
 EMAIL_HOST_PASSWORD = ''
 django_heroku.settings(locals())
+
+SITE_ID= 1
