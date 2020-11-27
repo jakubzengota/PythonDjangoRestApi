@@ -1,24 +1,30 @@
-# Laboratorium nr 2 - Rejestracja i logowanie
+# Laboratorium nr 3 - Logowania za pomocą fb i google
 
+Do wykonania laborki posłuzylem się projektem z Lab2
 
-Wygląd strony startowej
-![](./mysite/images/stronastartowa.png)
-Logowanie dla uźytkowników
-![](./mysite/images/login.png)
-Rejestracja
-![](./mysite/images/register.png)
-Resetowanie hasła:
-![](./mysite/images/resetpass.png)
-Widok userów dla admina
-![](./mysite/images/111.png)
-Widok profilu zalogowane uzytkownika
-![](./mysite/images/profil.png)
+Wygląd strony logowania:
+![](./mysite/images/opcjelogowania.png)
 
-Mail zwrotny z linkiem do resetu hasła. Chciałem zrobić konsolową treść maila, ale skorzystałem z app google i maile są wysyłane za pomocą gmaila. 
-![](./mysite/images/mail.png)
+Google Login:
+![](./mysite/images/google1.png)
+po zalogowaniu:
+pomyslnie zalogowany nowy uzytkownik:
+![](./mysite/images/google2.png)
+profil zalogowanego uzytkownika:
+![](./mysite/images/google3.png)
+Ustawienia developerskie google:
+![](./mysite/images/google.png)
+Facebook Login:
+![](./mysite/images/fb1.png)
+![](./mysite/images/fb2.png)
+po zalogowaniu:
+pomyslnie zalogowany nowy uzytkownik:
+![](./mysite/images/fb3.png)
+profil zalogowanego uzytkownika:
+![](./mysite/images/fb4.png)
+Ustawienia developerskie facebook:
+![](./mysite/images/fb.png)
 
-Kod dot. mailów. Hasło zostawiłem puste
-![](./mysite/images/mail2.png)
-
-
-
+DJANGO ADMIN:
+![](./mysite/images/djangoadmin.png)
+![](./mysite/images/sociale.png)
