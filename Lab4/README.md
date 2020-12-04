@@ -6,7 +6,7 @@ Dostępne url:
 * article/< id >
 * detail/< id >
 
-![](./img/1.png)
+![](./MyProject/img/1.png)
 
 Id postów są ustawiane automatycznie za sprawą serializera. Atrybuty posta:
     -id
@@ -15,11 +15,11 @@ Id postów są ustawiane automatycznie za sprawą serializera. Atrybuty posta:
     -data
 
 Gdy wejdziemy w detail/id mamy interfejs z usuwaniem oraz edytowaniem postów
-![](./img/2.png)
+![](./MyProject/img/2.png)
 
 Widok json:
-![](./img/4.png)
-![](./img/5.png)
+![](./MyProject/img/4.png)
+![](./MyProject/img/5.png)
 
 Z widoku panelu admina mamy wgląd do wszyskich wpisów:
-![](./img/3.png)
+![](./MyProject/img/3.png)
