@@ -20,17 +20,17 @@ def get_html_content(request):
 def home(request):
     result = None
     if 'city' in request.GET:
-        # fetch the weather from Google.
+        # pogoda w google
         html_content = get_html_content(request)
         from bs4 import BeautifulSoup
         soup = BeautifulSoup(html_content, 'html.parser')
         result = dict()
-        # extract region
+        # miasto
         result['region'] = soup.find("div", attrs={"id": "wob_loc"}).text
-        # extract temperature now
+        # temp
         result['temp_now'] = soup.find("span", attrs={"id": "wob_tm"}).text
-        # get the day and hour now
+        # dzien i godzina
         result['dayhour'] = soup.find("div", attrs={"id": "wob_dts"}).text
-        # get the actual weather
+        # pogoda
         result['weather_now'] = soup.find("span", attrs={"id": "wob_dc"}).text
     return render(request, 'core/home.html', {'result': result})

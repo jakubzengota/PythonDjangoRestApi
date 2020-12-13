@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Django Weather App</title>
+    <title>Pokaz pogode</title>
     <style>
         * {
             margin: 0;
@@ -32,22 +32,27 @@
         input[type='submit'] {
             width: 30%;
             padding: 5px;
-            background: black;
+            background: green;
             color: white;
             text-transform: uppercase;
+            border: 2px solid black;
         }
         form {
+            margin-bottom: 20px;
+        }
+        h4{
             margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 <div id="main">
-    <h1>Find the Weather</h1>
+    <h1>Pokaz pogode</h1>
+    <h4>Wpisz nazwe miasta</h4>
     <form method="GET">
         <div>
             <label for="city"></label>
-            <input type="text" id="city" value="{{ request.GET.city }}" placeholder="City..." name="city"/>
+            <input type="text" id="city" value="{{ request.GET.city }}" placeholder="Miasto..." name="city"/>
         </div>
         <input type="submit" value="Submit"/>
     </form>
