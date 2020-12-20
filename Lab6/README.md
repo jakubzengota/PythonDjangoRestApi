@@ -3,3 +3,5 @@
 
 ![](./MyProject/img/1.png)
 
+Cookies:
+![](./MyProject/img/1.png)

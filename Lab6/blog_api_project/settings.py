@@ -54,6 +54,7 @@ INSTALLED_APPS = [
 
     # Local
     'posts.apps.PostsConfig',
+    'biblio'
 ]
 
 MIDDLEWARE = [
