@@ -21,7 +21,28 @@ from rest_framework.decorators import api_view
 
 from rest_framework import authentication, permissions
 
-######
+class PostList(APIView):
+    serializer_class = PostSerializer
+    renderer_classes = (BrowsableAPIRenderer, JSONRenderer, HTMLFormRenderer)
+    def post(self, request, *args, **kwargs):
+        serializer = PostSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        # COOKIES
+    def get(self, request, *args, **kwargs):
+        snippets = Post.objects.all()
+        serializer = PostSerializer(snippets,many=True)  
+        response =  Response(serializer.data)
+        value =int(request.COOKIES.get('visits', '0'))
+        if request.COOKIES.get('visits' ):
+                response.set_cookie('visits', value + 1 )
+                response.set_cookie('last_visit', 'Witaj, to twoja kolejna wizyta')
+        else:
+                response.set_cookie('last_visit', 'Witaj' )
+                response.set_cookie('visits', value + 1 )
+        return response
 
 
 class PostDetail(generics.RetrieveUpdateDestroyAPIView):
