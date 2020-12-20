@@ -41,6 +41,7 @@ Widok tokenów:
 
 Router:
 ![](./img/14.png)
+
 Viewset:
 nie posiadamy metod takich jak get()
 ![](./img/15.png)
