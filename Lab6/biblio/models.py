@@ -9,7 +9,7 @@ class Ksiazka(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        verbose_name_plural = "Moje-Ksiazki"
+        verbose_name_plural = "Moje ksiazki"
 
     def __str__(self):
         return self.title

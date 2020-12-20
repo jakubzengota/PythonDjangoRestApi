@@ -1,6 +1,5 @@
 # Laboratorium nr 6 -  Zezwolenia i uwierzytelnianie w DRF
 
-Instalacja django-rest-auth.
 Dodanie licznika wejsc(cookie)
 Dodanie widoku: login, logout, password reset, password reset-confirm
 Widok rejestracji django rest-auth
@@ -29,6 +28,8 @@ Rejestracja nowego uzytkownika:
 ![](./img/8.png)
 Otrzymujemy token po załozeniu konta:
 ![](./img/9.png)
+Otrzymany mail  z potwierdzeniem w konsoli:
+![](./img/16.png)
 
 Tokeny uwierzytelniajace + email zwracany.
 Wgląd do widoku postów mają tylko uzytkownicy z tokenem
@@ -36,9 +37,17 @@ Wgląd do widoku postów mają tylko uzytkownicy z tokenem
 
 Widok tokenów:
 # http://127.0.0.1:8000/admin/authtoken/tokenproxy/
-![](./img/7.png)
+![](./img/11.png)
 
+Router:
+![](./img/14.png)
+Viewset:
+nie posiadamy metod takich jak get()
+![](./img/15.png)
 
+Licznik wizyt oraz informacja o ostatniej wizycie:
 
-Licznik Cookies:
-![](./MyProject/img/1.png)
+![](./img/12.png)
+W samym kodzie ustawiamy ilosc odwiedzin jezeli ich nie ma na 0 i jezeli wizyta nastąpi wartosc++
+![](./img/13.png)
+
