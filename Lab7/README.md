@@ -99,9 +99,56 @@ SUBSCRIBE - metoda która daje subskrybcje klienta do wybranego kanału
 
 Przykład 13:
 Strumienie:
+Wiadomości które wklimy do strumienia znajdą się nakoncu. Nie można dodać w konkretne miejsce!
+![](./img/33.PNG)
+Te liczby to czas od 1 stycznia 1970 + numer sekwencji
+![](./img/34.PNG)
+Dodajmy element strumienia
+![](./img/35.PNG)
+![](./img/36.PNG)
+Cli - dodanie strumienia
+![](./img/37.PNG)
+redis_connection.xdel(stream_name, msg_id) - aby elementy nie były zgubione
+![](./img/38.PNG)
 
+Przykład 14:
+Pipelining - inaczej przetwarzanie potokowe, które pozwala wysyłanie wielu instrukcji do redisa na raz.
+![](./img/39.PNG)
+Pokazanie sprawdzania kluczy, czy są takie same.
+![](./img/40.PNG)
+Błąd pokazuje zmiane kluczy
 
+Transakcje - Integrowanie kilku operacji w jedną całość.
+MULTI - rozpoczęcie transakcji. Zwracanie rezultatu wykonanych komend.
+EXEC - kolejne polecenia umieszczane w kolejce
+DISCARD - opóżnia wszystkie poprzednio umieszczone w kolejce polecania.
+WATCH - zaznacza klucze które mają być obserwowane w celu wykonania transakcji.
 
+Przykład 15:
+Lua - 
+eval - przekazanie ciała skryptu. Wykonanie operacji i wyswietlenie wyniku. Drugi argument(0) to ilosc argumentów które mozna przekazać do skryptu 
+![](./img/41.PNG)
+![](./img/42.PNG)
+Przekazanie dwóch kluczy i dworch argumentów:
+![](./img/43.PNG)
+![](./img/44.PNG)
+Zwrócenie 10-elementowej tablicy:
+![](./img/45.PNG)
+![](./img/46.PNG)
+
+Przykład 16:
+Format JSON - dodawanie 2 liczb.
+![](./img/47.PNG)
+![](./img/48.PNG)
+
+Format JSON dodawanie 10 i 5:
+![](./img/49.PNG)
+Tutaj możemy zobaczyć ze pierwsze wyświetla się "none", jest to efekt funkcji eval(zwraca null), a w key 2 wynik.
+![](./img/50.PNG)
+
+Cache:
+![](./img/51.PNG)
+![](./img/52.PNG)
 
 
 
