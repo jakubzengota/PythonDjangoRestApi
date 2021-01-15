@@ -139,7 +139,7 @@
 
 ### Format JSON dodawanie 10 i 5:
 ![](./img/49.PNG)
-###Tutaj możemy zobaczyć ze pierwsze wyświetla się "none", jest to efekt funkcji eval(zwraca null), a w key 2 wynik.
+### Tutaj możemy zobaczyć ze pierwsze wyświetla się "none", jest to efekt funkcji eval(zwraca null), a w key 2 wynik.
 ![](./img/50.PNG)
 
 ### Cache:
@@ -172,7 +172,7 @@
 
 ## Run celery:
 ### "celery -A image_parroter worker -l info -P gevent"
-    ![](./img/61.PNG)
+![](./img/61.PNG)
 
 ### Wygląd strony tumbnailer:
   ![](./img/62.PNG)
