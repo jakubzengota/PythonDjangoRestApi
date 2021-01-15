@@ -150,7 +150,52 @@ Cache:
 ![](./img/51.PNG)
 ![](./img/52.PNG)
 
+Django Celery:
+Instalacja:
+Wchodzimy w wirtualne srodowisko i wpisujemy:
+pip install Django Celery redis Pillow django-widget-tweaks
+pip freeze > requirements.txt
+![](./img/53.PNG)
+![](./img/54.PNG)
 
+Tworzenie celery.py:
+![](./img/55.PNG)
 
+Settings.py:
++aplikacja widget_tweaks
+![](./img/56.PNG)
+![](./img/57.PNG)
 
+plik _init_.py:
+ ![](./img/58.PNG)
 
+thumbnailer/tasks.py:
+ ![](./img/59.PNG)
+
+ Redis cli bez dockera:
+  ![](./img/60.PNG)
+
+  Run celery:
+  "celery -A image_parroter worker -l info -P gevent"
+    ![](./img/61.PNG)
+
+Wygląd strony tumbnailer:
+  ![](./img/62.PNG)
+Pobrane zdjęcie:
+ ![](./img/63.PNG)
+
+ Zapytania do serwera:
+ ![](./img/64.PNG)
+Konsola celery:
+ ![](./img/65.PNG)
+
+Taski:
+ ![](./img/66.PNG)
+ Teraz wpisujemy komende :
+ celery -A image_parroter beat -l INFO --scheduler 
+ django_celery_beat.schedulers:DatabaseScheduler
+  ![](./img/67.PNG)
+
+..oraz:
+celery -A image_parroter worker -l info -P gevent
+  ![](./img/68.PNG)
