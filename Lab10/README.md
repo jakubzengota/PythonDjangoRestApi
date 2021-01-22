@@ -3,7 +3,7 @@
 Install djangorestframework django-cors-headers - DRF
 
 ### settings.py
-'corsheaders.middleware.CorsMiddleware' -> DODAJEMY NA SAMEJ GÓRZE
+## 'corsheaders.middleware.CorsMiddleware' -> DODAJEMY NA SAMEJ GÓRZE
 ![](./img/1.PNG)
 
 ### models.py - modele todo
