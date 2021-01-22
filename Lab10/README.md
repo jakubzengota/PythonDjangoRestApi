@@ -43,6 +43,12 @@ Dodatkowa instalacja rozszerzenia do przegladarki do poprawnego działania duetu
 ## Index.js
 ![](./img/13.PNG)
 
+## App.js
+### ![](./img/17.PNG)
+### ![](./img/18.PNG)
+### ![](./img/19.PNG)
+### ![](./img/20.PNG)
+
 
 ## własne dodawanie zadań - incomplete
 ![](./img/8.PNG)
