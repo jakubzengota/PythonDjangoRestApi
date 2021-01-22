@@ -21,11 +21,11 @@ Install djangorestframework django-cors-headers - DRF
 
 ## Stawianie fronendu:
 
-npm install -g create-react-app
-create-react-app frontend
-npm install --global yarn
-yarn add bootstrap reactstrap
-npm install axios --save
+### npm install -g create-react-app
+### create-react-app frontend
+### npm install --global yarn
+### yarn add bootstrap reactstrap
+### npm install axios --save
 
 ## Moesif Origin & CORS Changer:
 Dodatkowa instalacja rozszerzenia do przegladarki do poprawnego działania duetu django + react
@@ -37,8 +37,8 @@ Dodatkowa instalacja rozszerzenia do przegladarki do poprawnego działania duetu
 ![](./img/7.PNG)
 
 ## Komponenty - Modal.js:
-![](./img/11.PNG)
-![](./img/12.PNG)
+### ![](./img/11.PNG)
+### ![](./img/12.PNG)
 
 ## Index.js
 ![](./img/13.PNG)
@@ -47,6 +47,8 @@ Dodatkowa instalacja rozszerzenia do przegladarki do poprawnego działania duetu
 ## własne dodawanie zadań - incomplete
 ![](./img/8.PNG)
 ![](./img/9.PNG)
+## usuwanie zadan - delete
+![](./img/16.PNG)
 
 ## własne dodawanie zadań - complete
 ![](./img/14.PNG)
