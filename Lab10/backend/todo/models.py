@@ -8,4 +8,3 @@ class Todo(models.Model):
 
   def _str_(self):
     return self.title
-    assert errors[0].msg.startswith("CORS_ORIGIN_ALLOW_ALL should be")
