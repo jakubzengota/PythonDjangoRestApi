@@ -1,5 +1,5 @@
 from django.db import models
-# Create your models here.
+
 
 class Todo(models.Model):
   title = models.CharField(max_length=120)
@@ -8,3 +8,4 @@ class Todo(models.Model):
 
   def _str_(self):
     return self.title
+    assert errors[0].msg.startswith("CORS_ORIGIN_ALLOW_ALL should be")
