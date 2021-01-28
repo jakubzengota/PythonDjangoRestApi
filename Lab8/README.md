@@ -23,8 +23,26 @@
 ### ![](./img/11.PNG)
 ### ![](./img/12.PNG)
 
-
-
-
-
 ## 2.Workers
+### ![](./img/13.PNG)
+### Aby bez pomocy django utworzyć projekt, musimy włączyć python server:
+### ![](./img/14.PNG)
+### Wygląd strony:
+### ![](./img/15.PNG)
+### Działanie:
+### ![](./img/16.PNG)
+### ![](./img/18.PNG)
+### Gdy podamy złe dane otrzymamy błąd:
+### ![](./img/17.PNG)
+### fibonacci.js:
+### ![](./img/20.PNG)
+### silnia.js:
+### ![](./img/19.PNG)
+### script.js
+### Tworzenie workerów ( new Worker())
+### onmessage -> EventHandler, który będzie wywołany gdy będzie zdarzenie
+### ![](./img/21.PNG)
+### index.js - kod:
+### ![](./img/23.PNG)
+### index.js - przekazanie danych poprzez input
+### ![](./img/22.PNG)
