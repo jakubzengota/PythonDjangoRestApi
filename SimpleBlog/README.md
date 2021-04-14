@@ -1,7 +1,3 @@
-# Laboratorium nr 1 - modyfikacja elementów strony 
-
-
-
 STRONA STAROWA - https://zengota-blog.herokuapp.com/blog/
 ![](./blog/static/img/1.png)
 LOGOWANIE DO PANELU ADMINA - https://zengota-blog.herokuapp.com/ADMIN/
